@@ -1,0 +1,98 @@
+@media screen and (min-width: 585px) {
+	.banner .caption {
+    left: 23%;
+    font-size: 27px;
+}
+}
+
+
+@media screen and (min-width: 776px) {
+	.banner .caption {
+    left: 28%;
+    font-size: 30px;
+}
+}
+
+@media screen and (min-width: 1058px) {
+	.banner .caption {
+    left: 30%;
+    top: 5%;
+    font-size: 34px;
+}
+}'
+
+@media screen and (min-width: 1335px) {
+	.banner .caption {
+    left: 34%;
+    top: 9%;
+    font-size: 39px;
+}
+}
+
+@media screen and (min-width: 850px) {
+	#logo {
+		float: left;
+	}
+	#nav {
+		float: right;
+	}
+   .topnav {
+	width: 80%;
+	margin: auto;
+}
+}
+
+@media screen and (max-width: 416px) {
+	#logo {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 357px) {
+	#logo {
+		font-size: 20px;
+	}
+}
+
+/* Styling the main-content in tablet mode */
+@media screen and (min-width: 989px) {
+	#sub-content {
+		display: flex;
+	}
+	#main-content {
+		width: 100%;
+		max-width: none;
+	}
+	#sub-content .text {
+		max-width: 700px;
+		padding-left: 100px;
+	}
+	#sub-content {
+		margin: auto;
+	}
+	.btn {
+		display: block;
+	}
+}
+
+/* Styling the second-content in tablet mode */
+@media screen and (min-width: 830px) { 
+	#second-content {
+	}
+	#second-content-wrapper {
+	width: 100%;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+}
+	
+}
+
+@media screen and (min-width: 1425px) { 
+	#second-content-wrapper {
+	width: 100%;
+	max-width: 1160px;
+	display: flex;
+	flex-wrap: wrap;
+}
+}
