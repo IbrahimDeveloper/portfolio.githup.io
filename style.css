@@ -282,3 +282,190 @@ figure {
 	 top: 1500px;
 	 z-index: 100;
  }
+ 
+ /* Styling the contact form section*/
+ 
+ #contact-form-wrapper {
+	 background-color: white;
+ } 
+ #contact-form {
+	 padding-bottom: 50px;
+ }
+ /* Styling the form */
+ .the-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 15px;
+  border: 13px solid #CACBCE;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+input:focus
+ {
+    outline: none !important;
+    border:1px solid green;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+  outline: none !important;
+  border:1px solid blue;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+input,
+textarea,
+button {
+  border-radius: 3%;
+  flex-grow: 1;
+  width: 100%;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+input {
+    height: 50px;
+}
+
+button {
+  outline: none;
+    box-shadow: none !important;
+    background-color: #2fc5cb;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-bottom: 5px solid #1fb0b5 !important;
+    width: 100%;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #31D3D9;
+}
+textarea {
+  height: 100px;
+  width: 100%;
+}
+
+/* Styling the label. */
+
+label {
+  font-family: sans-serif;
+  width: 80%;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  align-self: center;
+  color: #333333;
+}
+
+
+/* Styling The Fieldset */
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+
+/* Styling the social media image links */
+#socialMediaLinks img {
+		width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    padding-right: 20px;
+
+}
+
+#socialMediaLinks {
+	margin: auto;
+} 
+
+#socialMediaLinks img:hover {
+	img: url("githup.svg");
+}
+
+/* Styling the footer */
+
+
+footer {
+	margin-top: 10px;
+	padding: 10px;
+}
+footer ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+footer ul li {
+	padding-right: 50px;
+	font-size: 20px;
+	font-family: sans-serif;
+}

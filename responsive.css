@@ -96,3 +96,10 @@
 	flex-wrap: wrap;
 }
 }
+
+@media screen and (min-width: 1118px) {
+	#banner-sub-text {
+		font-size: 50px;
+		padding-left: 90px;
+	}
+}

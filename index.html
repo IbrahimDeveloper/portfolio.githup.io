@@ -14,10 +14,10 @@
       <nav class="topnav" id="myTopnav">
         <a href="index.html" style="height: 65px;" id="logo">Ibrahim Warsame</a>
 		<div id="nav">
-			<a href="#about" style="height: 6px;" ></a>
-        <a href="#about" style="height: 65px;" >About</a>
-        <a href="#contact" style="height: 65px;" >Contact</a>
-        <a href="index.html" style="height: 65px;">Home</a>
+			<a href="#abou" style="height: 6px;" ></a>
+        <a href="#second-content" style="height: 65px;" >About</a>
+        <a href="#portfolio" style="height: 65px;" >Porfolio</a>
+        <a href="index.html" style="height: 65px;">Contact</a>
 		</div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction();">&#9776;</a>
       </nav>
@@ -31,7 +31,7 @@
 	
 	<!-- About Section -->
 	<div id="main-content-wrapper">
-	<div id="main-content">
+	<div id="main-content" name="about">
 	
 	<h2>ABOUT</h2>
 	<div class="sep"></div>
@@ -50,13 +50,13 @@
    </div>
    </div>
    
-   <h2 class="utlandish">PORTFOLIO</h2>
+   <h2 class="utlandish" id="portfolio">PORTFOLIO</h2>
 	<div class="sep"></div>
    <!-- Porfolio  Section -->
    <div id="second-content">
 		<div id="second-content-wrapper">
 		<figure>
-				<a href="https://ibrahimdeveloper.github.io/animalSite.github.io/"><img src="animal-site.JPG" style="width: 360px; height: 260px;"></a>
+				<a href="https://ibrahimdeveloper.github.io/animalSite.github.io/"><img src="animal-site.jpg" style="width: 360px; height: 260px;"></a>
 			<figcaption class="caption-text">Animal Reservation Website</figcaption>
 			<figcaption class="sub-caption-text">Web Design</figcaption>
 		</figure>
@@ -68,33 +68,66 @@
 		</figure>
 		
 		<figure>
-				<a href="https://ibrahimdeveloper.github.io/nuWeave.github.io/"><img src="nuweave.JPG" style="width: 360px; height: 260px;"></a>
+				<a href="https://ibrahimdeveloper.github.io/nuWeave.github.io/"><img src="nuweave.jpg" style="width: 360px; height: 260px;"></a>
 			<figcaption class="caption-text">Online Ecommerce Website</figcaption>
 			<figcaption class="sub-caption-text">Web Design</figcaption>
 		</figure>
 		
 		<figure>
-			<a href="https://ibrahimdeveloper.github.io/improvedPortfolio.githup.io/"><img src="best-site.JPG" style="width: 360px; height: 260px;"></a>
+			<a href="https://ibrahimdeveloper.github.io/improvedPortfolio.githup.io/"><img src="best-site.jpg" style="width: 360px; height: 260px;"></a>
 			<figcaption class="caption-text">Personal Portfolio Website</figcaption>
 			<figcaption class="sub-caption-text">Web Design</figcaption>
 		</figure>
 		
 		<figure>
-			<a href="hiiliye-site.JPG"><img src="hiiliye-site.JPG" style="width: 360px; height: 260px;"></a>
+			<a href="hiiliye-site.jpg"><img src="hiiliye-site.jpg" style="width: 360px; height: 260px;"></a>
 			<figcaption class="caption-text">Travel Agency Website</figcaption>
 			<figcaption class="sub-caption-text">Web Design</figcaption>
 		</figure>
 		
 		<figure>
-			<a href="https://ibrahimdeveloper.github.io/animalSite.github.io/"><img src="animal-site.JPG" style="width: 360px; height: 260px;"></a>
+			<a href="https://ibrahimdeveloper.github.io/animalSite.github.io/"><img src="animal-site.jpg" style="width: 360px; height: 260px;"></a>
 			<figcaption class="caption-text">Animal Reservation Website</figcaption>
 			<figcaption class="sub-caption-text">Web Design</figcaption>
 		</figure>
 		</div>
    </div>
- 
-	<div id="contact-form">
+   <div id="contact-form-wrapper" name="contact">
+		<h2 style="text-align: center; background-color: white;" id="contact">GET IN THOUCH</h2>
+		<div class="sep"></div>
+		<div id="contact-form">
+			<form action="index.html" method="post" class="the-form" id="body">
+      <fieldset>
+          <legend><span class="number">1</span>Your basic Info</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="number">2</span>How may i help you?</legend>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="user_comment"></textarea>
+        <button type="submit" id="button">Submit</button>
+      </fieldset>
+	  <div id="socialMediaLinks">
+			<img onmouseover="changeUrl(this)" src="twitter.svg" id="twitter">
+			<img onmouseover="changeUrl(this)" src="link.svg" id="link">
+			<img onmouseover="changeUrl(this)" src="githup.svg" id="githup">
+	  </div>
+    </form>
+		</div>
 	</div>
+	<footer>
+		<ul>
+			<li>© 2017 Ibrahim Warsame</li>
+			<li>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></li>
+			<li>bilakaunta23@gmail.com</li>
+		</ul>
+	</footer>
    <script>
 		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
       function myFunction() {
@@ -107,6 +140,11 @@
             y.style.display = "none";
         }
       }
+	  
+	  // changing the image url on hover.
+	  function changeUrl(x) {
+		x.style.src = x.style.id + "hover.svg";
+	  }
    </script>
   <script src="jquery-3.2.1.min.js"></script>
   <!-- <script src="lightbox.js"></script> -->
